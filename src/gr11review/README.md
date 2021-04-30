@@ -13,13 +13,13 @@ Enter the day number: 14
 
 ### Review2.java - Decisions - switch/case
 Create a program that prints out a statement of options. Allow the user to select an option and react appropriately to the option selection using a switch case structure. The options should be as follows:
-0 - print an joke about your hair
+0 - print a joke about your hair
 1 - print a joke about your feet
 2 - print a joke about your clothes 3 - print a joke about your teacher.  If an invalid option number is entered (i.e `4`), output `Invalid menu option`.
 
 #### Sample Run
 ```
-0 - print an joke about your hair
+0 - print a joke about your hair
 1 - print a joke about your feet
 2 - print a joke about your clothes
 3 - print a joke about your teacher
@@ -67,11 +67,11 @@ Create a cash register program similar to the one above, except instead of promp
 
 #### Sample Run
 ```
-Enter the price for item 1: 2.50
-Enter the price for item 2: 3.99
-Enter the price for item 3: 6.99
-Enter the price for item 4: 7.99
-Enter the price for item 4: 0
+Enter the price for an item: 2.50
+Enter the price for an item: 3.99
+Enter the price for an item: 6.99
+Enter the price for an item: 7.99
+Enter the price for an item: 0
 Subtotal: $21.47
 Tax: $2.79
 Total: $24.26

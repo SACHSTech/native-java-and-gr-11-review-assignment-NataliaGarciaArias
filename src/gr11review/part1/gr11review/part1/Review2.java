@@ -27,13 +27,13 @@ import java.io.*;
             case 0:
                 //System.out.println("joke about hair");
                 break;
-            case 1;
+            case 1:
                 //System.out.println("joke about feet");
                 break;
-            case 2;
+            case 2:
                 //System.out.println("joke about clothes");
                 break;
-            case 3;
+            case 3:
                 //System.out.println("joke about teacher");
                 break;
             default:

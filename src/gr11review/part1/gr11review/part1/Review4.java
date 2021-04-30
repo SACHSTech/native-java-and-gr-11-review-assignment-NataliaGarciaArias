@@ -16,7 +16,7 @@ public class Review4{
         double totalPurchase;
 
         //Set the decimal format to include two decimal places
-        DecimalFormat decimalformat = new DecimalFormat("#0.00");
+        DecimalFormat decimalFormat = new DecimalFormat("#0.00");
 
 
         //Ask user for # of items they want to purchase
@@ -34,8 +34,8 @@ public class Review4{
         totalPurchase = sumPrice + totalTax;
 
         //Print total, tax, and grand total
-        System.out.println("Subtotal: $"+ sumPrice);
-        System.out.println("Tax: $"+ totalTax);
-        System.out.println("Total: $"+ totalPurchase);
+        System.out.println("Subtotal: $"+ decimalFormat.format(sumPrice));
+        System.out.println("Tax: $"+ decimalFormat.format(totalTax));
+        System.out.println("Total: $"+ decimalFormat.format(totalPurchase));
     }
 }

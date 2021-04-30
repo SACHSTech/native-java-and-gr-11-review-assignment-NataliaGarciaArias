@@ -19,5 +19,12 @@ public class Review1{
         System.out.print("Enter the day number: ");
         numDay = Integer.parseInt(key.readLine());
 
+        for (int i = 0; i < (numMonth - 1); i++){
+
+            numDayOfYear += listMonthsInDays[i];
+        
+        }
+        
+        System.out.println(numDay + numDayOfYear);
     }
 }

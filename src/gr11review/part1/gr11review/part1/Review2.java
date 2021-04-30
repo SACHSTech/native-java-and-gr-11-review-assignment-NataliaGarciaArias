@@ -19,8 +19,8 @@ import java.io.*;
         System.out.println("3 - print a joke about your teacher");
 
         //Ask for user input
-        System.out.println("Choose a menu option: ");
-        userInput = key.read();
+        System.out.print("Choose a menu option: ");
+        userInput = Integer.parseInt(key.readLine());
 
         //Compare value against each case
         switch (userInput){

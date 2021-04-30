@@ -9,9 +9,12 @@ public class Review5{
         BufferedReader key = new BufferedReader(new InputStreamReader(System.in));
 
         //Create variables
-        double investedAmount;
-        double interestRate;
-        double targetAmount;
+        double investedAmount = 0;
+        double interestRate = 0;
+        double targetAmount = 0;
+        double currentAmount = 0;
+        double compoundedAmount = 0;
+        int targetTime = 0;
 
 
         //Prompt for user input
@@ -24,12 +27,16 @@ public class Review5{
         System.out.print("Enter the target amount: ");
         targetAmount = Double.parseDouble(key.readLine());
 
-
-
         //Calculate
+        while (currentAmount < targetAmount){
 
+            compoundedAmount = (interestRate/100)*(investedAmount);
+            currentAmount = compoundedAmount + investedAmount;
+            targetTime++;
+        }
 
         //Print results
+        System.out.println("The target amount will be earned in "+ targetTime +" years.");
     }
 
 }

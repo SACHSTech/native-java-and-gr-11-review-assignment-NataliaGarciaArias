@@ -4,15 +4,17 @@ import java.io.*;
 public class Review1{
     public static void main(String[] args) throws IOException{
 
-        //Declare Variables
+        //Declare variables and create an array storing the number of days in a month
 
         int numMonth;
         int numDay;
-        int[] listMonthsInDays = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
-        int numDayOfYear = 0;
+        int[] listDaysInMonths = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+        int sumDaysInMonths = 0;
+        int numDayOfYear;
 
         BufferedReader key = new BufferedReader(new InputStreamReader(System.in));
-
+        
+        //Ask user to for the month and day numbers
         System.out.print("Enter the month number: ");
         numMonth = Integer.parseInt(key.readLine());
 
@@ -21,10 +23,12 @@ public class Review1{
 
         for (int i = 0; i < (numMonth - 1); i++){
 
-            numDayOfYear += listMonthsInDays[i];
+            sumDaysInMonths += listDaysInMonths[i];
         
         }
         
-        System.out.println(numDay + numDayOfYear);
+        //Print the day of the year
+        numDayOfYear = numDay + sumDaysInMonths;
+        System.out.println(numDayOfYear);
     }
 }

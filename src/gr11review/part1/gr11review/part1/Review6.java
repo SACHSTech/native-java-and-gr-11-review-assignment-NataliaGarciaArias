@@ -33,9 +33,9 @@ import java.text.DecimalFormat;
          totalPrice = sumPrice * 1.13;
 
          //Print subtotal, tax, and total
-         System.out.print("Subtotal: $"+ decimalFormat.format(sumPrice));
-         System.out.print("Tax: $"+ decimalFormat.format(totalTax));
-         System.out.print("Total: $" + decimalFormat.format(totalPrice));
+         System.out.println("Subtotal: $"+ decimalFormat.format(sumPrice));
+         System.out.println("Tax: $"+ decimalFormat.format(totalTax));
+         System.out.println("Total: $" + decimalFormat.format(totalPrice));
 
      }
  }

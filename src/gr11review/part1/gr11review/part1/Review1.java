@@ -3,7 +3,7 @@ import java.io.*;
 
 /**
  * This program Review1.java lets the user enter a month number and day,
- * then prints the day of the year in which it lies on. 
+ * then prints the day of the year in which it lies on. Assuming that it is not a leap year.
  * @author: N. Garcia-Arias
  * 
  */
@@ -25,11 +25,12 @@ public class Review1{
         System.out.print("Enter the day number: ");
         numDay = Integer.parseInt(key.readLine());
 
+        //Add the days in the months up until the inputted month number
         for (int i = 0; i < (numMonth - 1); i++){
             sumDaysInMonths += listDaysInMonths[i];
         }
         
-        //Print the day of the year
+        //Add and print results
         numDayOfYear = numDay + sumDaysInMonths;
         System.out.println(numDayOfYear);
     }

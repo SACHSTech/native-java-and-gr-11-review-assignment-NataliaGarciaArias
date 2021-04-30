@@ -22,19 +22,23 @@ import java.io.*;
         System.out.println("Choose a menu option: ");
         userInput = key.read();
 
-
+        //Compare value against each case
         switch (userInput){
             case 0:
-                //System.out.println("joke about hair");
+                System.out.println("Why do bees have sticky hair?");
+                System.out.println("They always use honeycombs.");
                 break;
             case 1:
-                //System.out.println("joke about feet");
+                System.out.println("Why do people like foot massages?");
+                System.out.println("They are good for the sole.");
                 break;
             case 2:
-                //System.out.println("joke about clothes");
+                System.out.println("What do you call a jacket that catches on fire?");
+                System.out.println("A blazer!");
                 break;
             case 3:
-                //System.out.println("joke about teacher");
+                System.out.println("Why did Mr. Fabroa wear sunglasses to class?");
+                System.out.println("Because his class was so bright!");
                 break;
             default:
                 System.out.println("Invalid menu option");

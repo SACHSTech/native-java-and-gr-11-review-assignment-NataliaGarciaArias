@@ -12,13 +12,19 @@ import java.io.*;
          //Creates variables
          double itemPrice = 1;
          double sumPrice = 0;
-         int itemCount = 1;
+         //int itemCount = 1;
 
          while (itemPrice != 0){
-             System.out.print("Enter the price item " +itemCount+ ": ");
-             sumPrice += Double.parseDouble(key.readLine());
+             System.out.print("Enter the price for an item: ");
+             itemPrice = Double.parseDouble(key.readLine());
+
+             sumPrice += itemPrice;
+
+             //itemCount++;
 
          }
+
+         System.out.print("Subtotal: $"+ sumPrice);
 
      }
  }

@@ -6,7 +6,18 @@ import java.io.*;
  */
 public class Review5{
     public static void main(String[] args) throws IOException{
-        
+
+        //Create variables
+
+
+        //Prompt for user input
+
+
+
+        //Calculate
+
+
+        //Print results
     }
 
 }

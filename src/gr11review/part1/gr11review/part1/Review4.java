@@ -34,5 +34,8 @@ public class Review4{
         totalPurchase = sumPrice + totalTax;
 
         //Print total, tax, and grand total
+        System.out.println("Subtotal: $"+ sumPrice);
+        System.out.println("Tax: $"+ totalTax);
+        System.out.println("Total: $"+ totalPurchase);
     }
 }

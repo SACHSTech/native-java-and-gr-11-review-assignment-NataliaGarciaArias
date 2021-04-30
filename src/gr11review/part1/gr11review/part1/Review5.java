@@ -30,8 +30,8 @@ public class Review5{
         //Calculate
         while (currentAmount < targetAmount){
 
-            compoundedAmount = (interestRate/100)*(investedAmount);
-            currentAmount = compoundedAmount + investedAmount;
+            compoundedAmount = (interestRate/100)*(currentAmount + investedAmount);
+            currentAmount += compoundedAmount + investedAmount;
             targetTime++;
         }
 

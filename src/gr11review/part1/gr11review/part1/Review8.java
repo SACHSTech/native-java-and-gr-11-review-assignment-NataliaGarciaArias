@@ -1,7 +1,9 @@
 package gr11review.part1;
 import java.io.*;
 /**
- * Block comment
+ * This program Review8.java simulates 1000 slot machine pulls and
+ * each pull generates 3 random numbers. These random values are
+ * outputted along with the number of times a triple was pulled.
  * @author N. Garcia-Arias
  * 
  */
@@ -16,7 +18,7 @@ public class Review8{
 
         for (int i = 0; i < 1000; i++){
 
-            //Generate three random numbers between 0 and 8
+            //Generate 3 random numbers between 0 and 8
             random1 = (int)(Math.random() * ((8 - 0) + 1));
             random2 = (int)(Math.random() * ((8 - 0) + 1));
             random3 = (int)(Math.random() * ((8 - 0) + 1));
@@ -26,11 +28,11 @@ public class Review8{
                 tripleCount++;
             }
 
-            //Print the three results on a single line
+            //Output the 3 random numbers per line
             System.out.println(random1 + " " + random2 + " " + random3);
         }
 
-        //Output the total triple count
+        //Output the total # of triples pulled
         System.out.println(tripleCount);
     }
 }

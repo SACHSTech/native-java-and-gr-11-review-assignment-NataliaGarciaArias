@@ -2,9 +2,10 @@ package gr11review.part1;
 import java.io.*;
 import java.text.DecimalFormat;
 /**
- * Block comment
+ * This program Review6.java allows the user to input
+ * item prices until the value '0' is entered, then outputs
+ * subtotal, tax, and total values. 
  * @author N. Garcia-Arias
- * 
  */
  public class Review6{
      public static void main(String[] args) throws IOException{
@@ -32,7 +33,7 @@ import java.text.DecimalFormat;
          totalTax = sumPrice * 0.13;
          totalPrice = sumPrice * 1.13;
 
-         //Print subtotal, tax, and total
+         //Output subtotal, tax, and total
          System.out.println("Subtotal: $"+ decimalFormat.format(sumPrice));
          System.out.println("Tax: $"+ decimalFormat.format(totalTax));
          System.out.println("Total: $" + decimalFormat.format(totalPrice));

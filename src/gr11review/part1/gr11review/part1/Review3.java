@@ -11,16 +11,12 @@ import java.io.*;
         //Print odd numbers from 20 - 100
         for (int i = 20; i <= 100; i++){
             if (i % 2 != 0) {
-                System.out.print(i + " ");
+                System.out.print(i + " \n");
             }
          }
-
-        //Blank line to separate
-        System.out.println(" \n");
-
         //Print numbers from 29 - 2 in decreasing order
         for (int d = 29; d >= 2; d--){
-            System.out.print(d + " ");
+            System.out.print(d + " \n");
         }
      }
  }

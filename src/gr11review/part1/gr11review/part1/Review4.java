@@ -20,7 +20,7 @@ public class Review4{
 
 
         //Ask user for # of items they want to purchase
-        System.out.print("How many times do you want to buy? ");
+        System.out.print("How many items do you want to buy? ");
         numItems = Integer.parseInt(key.readLine());
 
         //Get prices

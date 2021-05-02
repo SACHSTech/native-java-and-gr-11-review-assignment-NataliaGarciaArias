@@ -1,15 +1,16 @@
 package gr11review.part1;
 import java.io.*;
 /**
- * Block comment here
+ * This program Review2.java prompts a menu and outputs a joke
+ * in response to the user's input.
  * @author: N. Garcia-Arias
  */
 
  public class Review2{
      public static void main(String[] args) throws IOException{
-        
-        //Create variables
         BufferedReader key = new BufferedReader(new InputStreamReader(System.in));
+        
+        //Create variables for user input
         int userInput;
 
         //Print Options
@@ -22,7 +23,7 @@ import java.io.*;
         System.out.print("Choose a menu option: ");
         userInput = Integer.parseInt(key.readLine());
 
-        //Compare value against each case
+        //Compare value against each case and execute the corresponding output
         switch (userInput){
             case 0:
                 System.out.println("Why do bees have sticky hair?");

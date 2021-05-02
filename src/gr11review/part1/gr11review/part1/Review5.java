@@ -3,7 +3,7 @@ import java.io.*;
 /**
  * This program calculates the years required to
  * reach a target investment amount using inputted information.
- * @author N.Garcia-Arias
+ * @author N. Garcia-Arias
  */
 public class Review5{
     public static void main(String[] args) throws IOException{
@@ -38,7 +38,7 @@ public class Review5{
             targetTime++;
         }
 
-        //Print results
+        //Output final results
         System.out.println("The target amount will be earned in "+ targetTime +" years.");
     }
 

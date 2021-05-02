@@ -10,9 +10,40 @@ public class Review7{
     public static void main(String[] args) throws IOException{
         BufferedReader key = new BufferedReader(new InputStreamReader(System.in));
         
+        //methods to use:
+
         String theSentence;
-        int sentenceLength;
+        int theLength;
+        int theSpaces;
+        char someChar = 'a';
+        int countA = 0;
+        int dashes;
         
+        //Prompt user to enter a sentence
         theSentence = key.readLine();
+
+        //Calculate the length of the sentence
+        theLength = theSentence.length();
+
+        //Remove the whitespaces from the sentence and calculate the difference
+        theSpaces = theLength - theSentence.replaceAll(" ", "").length();
+
+        for(int i = 0; i < theLength; i++){
+            //Calculate the instances of the letter 'a'
+            if(theSentence.charAt(i) == someChar){
+                countA++;
+            }
+        }
+
+        dashes = (theLength + 1)/2;
+        //Print results
+        System.out.println("There are "+ theLength + " characters in the sentence.");
+        System.out.println("There are "+ theSpaces + " spaces in the sentence.");
+        System.out.println("There are "+ countA + " letter a in the sentence.");
+
+        for(int c = 0; c < dashes; c++){
+            System.out.print("-");
+        }
+
     }
 }

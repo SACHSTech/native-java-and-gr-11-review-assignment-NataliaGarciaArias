@@ -2,7 +2,10 @@ package gr11review.part1;
 import java.io.*;
 import java.text.DecimalFormat;
 /**
- * Block comment here
+ * This program Review4.java asks the user for the number of
+ * items and their prices then 
+ * outputs the subtotal, tax, and total 
+ * values of the purchase.
  * @author N. Garcia-Arias
  */
 public class Review4{
@@ -18,7 +21,6 @@ public class Review4{
         //Set the decimal format to include two decimal places
         DecimalFormat decimalFormat = new DecimalFormat("#0.00");
 
-
         //Ask user for # of items they want to purchase
         System.out.print("How many items do you want to buy? ");
         numItems = Integer.parseInt(key.readLine());
@@ -33,7 +35,7 @@ public class Review4{
         totalTax = sumPrice*0.13;
         totalPurchase = sumPrice + totalTax;
 
-        //Print total, tax, and grand total
+        //Output formatted subtotal, tax, and grand total values
         System.out.println("Subtotal: $"+ decimalFormat.format(sumPrice));
         System.out.println("Tax: $"+ decimalFormat.format(totalTax));
         System.out.println("Total: $"+ decimalFormat.format(totalPurchase));

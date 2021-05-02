@@ -10,14 +10,13 @@ public class Review7{
     public static void main(String[] args) throws IOException{
         BufferedReader key = new BufferedReader(new InputStreamReader(System.in));
         
-        //methods to use:
-
+        //Created variables
         String theSentence;
         int theLength;
         int theSpaces;
         char someChar = 'a';
         int countA = 0;
-        int dashes;
+        int oddCharacters;
         
         //Prompt user to enter a sentence
         theSentence = key.readLine();
@@ -35,15 +34,17 @@ public class Review7{
             }
         }
 
-        dashes = (theLength + 1)/2;
+        //Calculate the # of odd characters in the sentence
+        oddCharacters = (theLength + 1)/2;
+
         //Print results
         System.out.println("There are "+ theLength + " characters in the sentence.");
         System.out.println("There are "+ theSpaces + " spaces in the sentence.");
         System.out.println("There are "+ countA + " letter a in the sentence.");
 
-        for(int c = 0; c < dashes; c++){
+        //Print string with as many dashes "-" as there are odd numbered characters
+        for(int c = 0; c < oddCharacters; c++){
             System.out.print("-");
         }
-
     }
 }
